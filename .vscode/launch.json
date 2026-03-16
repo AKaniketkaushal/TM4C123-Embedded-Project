@@ -1,0 +1,23 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug TM4C123GXL",
+      "cwd": "${workspaceRoot}",
+      "executable": "${workspaceRoot}/build/tm4c123gxl.elf",
+      "request": "launch",
+      "type": "cortex-debug",
+      "servertype": "openocd",
+      "interface": "swd",
+      "device": "TM4C123GH6PM",
+      "runToEntryPoint": "main",
+      "configFiles": [
+        "board/ti_ek-tm4c123gxl.cfg"
+      ],
+      "gdbPath": "gdb-multiarch",
+      "serverpath": "openocd",
+      "preLaunchTask": "build"
+    }
+  ]
+}
+
